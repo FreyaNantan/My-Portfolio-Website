@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +11,10 @@ body{
     background: linear-gradient(135deg,#4facfe,#00f2fe);
     margin:0;
     padding:20px;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .cv{
@@ -72,6 +76,10 @@ h2{
     color:#1e3a8a;
     border-bottom:2px solid #1e3a8a;
     padding-bottom:5px;
+}
+
+.hhk{
+    color:rgb(0, 0, 0);
 }
 
 .skill{
@@ -140,6 +148,26 @@ a:hover{
          2px  2px 0 #2563eb;
 }
 
+video{
+    width: 92%;
+    margin-top:10px;
+    margin-bottom:20px;
+    border-radius:10px;
+    border: 1px solid #000000;
+    
+}
+
+button {
+    animation: shake 3.5s infinite;
+}
+
+@keyframes shake {
+    0%, 14% { transform: rotate(0); }
+    2%, 6%, 10% { transform: rotate(-5deg); }
+    4%, 8%, 12% { transform: rotate(5deg); }
+    14%, 100% { transform: rotate(0); }
+}
+
 </style>
 
 </head>
@@ -160,13 +188,17 @@ a:hover{
         <!-- Kolom Kiri -->
         <div class="left">
 
-            <h2>Kontak</h2>
+            <a href="gambar-saya.png" download>Download Gambar PNG</a>
 
-            <p><b>Email:</b> freiya@email.com</p>
-            <p><b>Telepon:</b> 089661140106</p>
-            <p><b>Alamat:</b> Jawa Barat, Indonesia</p>
 
-            <h2>Keahlian</h2>
+            <h2>Contact</h2>
+            <p><b>Full Name :</b> Freiya Nantan Keona Sarif</p>
+            <p><b>Date of Birth :</b> 03/09/2006</p>
+            <p><b>Email :</b> freyanantan@email.com</p>
+            <p><b>Phone Number :</b> 089661140106</p>
+            <p><b>Address :</b> Jawa Barat, Indonesia</p>
+
+            <h2>Skills</h2>
 
             <span class="skill">HTML</span>
             <span class="skill">CSS</span>
@@ -175,12 +207,12 @@ a:hover{
             <span class="skill">Blender</span>
             <span class="skill">Desain Grafis</span>
 
-            <h2>Link Akun Bisnis</h2>
+            <h2>Business Links</h2>
 
             <ul>
                 <li>
-                    <a href="https://www.google.com" target="_blank">
-                        Google
+                    <a href="https://www.instagram.com/freiya_ceo/" target="_blank">
+                        Instagram
                     </a>
                 </li>
 
@@ -191,41 +223,57 @@ a:hover{
                 </li>
 
                 <li>
-                    <a href="https://github.com" target="_blank">
-                        GitHub
+                    <a href="https://www.tiktok.com/@freyanantan?lang=id-ID" target="_blank">
+                        Tiktok
                     </a>
                 </li>
             </ul>
+
+            <h2>Navigation</h2>
+
+            <button style="background: #2563eb;
+             color: rgb(255, 255, 255);
+             border: 1px solid #000000;
+             border-radius: 12px;
+             padding: 10px 20px;
+             cursor: pointer;
+             font-size: 16px;
+             transition: 0.25s ease;" onclick="location.href='#cv'">CV</button>
+
+             <button style="background: #2563eb;
+             color: rgb(255, 255, 255);
+             border: 1px solid #000000;
+             border-radius: 12px;
+             padding: 10px 20px;
+             cursor: pointer;
+             font-size: 16px;
+             transition: 0.25s ease;" onclick="location.href='#pt'">Potofolio</button>
+
+             <button style="background: #2563eb;
+             color: rgb(255, 255, 255);
+             border: 1px solid #000000;
+             border-radius: 12px;
+             padding: 10px 20px;
+             cursor: pointer;
+             font-size: 16px;
+             transition: 0.25s ease;" onclick="location.href='#video'">Project</button>
+
+             
 
         </div>
 
         <!-- Kolom Kanan -->
         <div class="right">
 
-            <h2>Tentang Saya</h2>
-
-            <p>
-                Saya adalah <b>mahasiswa Informatika</b> yang memiliki
-                minat dalam bidang teknologi, pengembangan website,
-                animasi, dan desain grafis. Saya senang mempelajari
-                hal-hal baru yang dapat meningkatkan kemampuan saya
-                dalam dunia digital.
-            </p>
-
-            <p>
-                Selain itu, saya juga tertarik pada bidang
-                <i>pembuatan Game</i> dan pengembangan aplikasi.
-                Saya memiliki pengalaman membuat website sederhana,
-                animasi menggunakan Blender, serta berbagai proyek
-                berbasis HTML dan CSS untuk promosi game.
-            </p>
-
-            <h2>Riwayat Pendidikan</h2>
+            <h2 id="cv">[Universitas Siber Asia] – [Informatika]</h2>
+            <p>Universitas Siber Asia – PJJ Informatika March 2026 – Present</p>
+ 
+            <h2>Education</h2>
 
             <table>
                 <tr>
-                    <th>Tahun</th>
-                    <th>Institusi</th>
+                    <th>Year</th>
+                    <th>Institution</th>
                 </tr>
 
                 <tr>
@@ -234,59 +282,249 @@ a:hover{
                 </tr>
 
                 <tr>
-                    <td>2023 - Sekarang</td>
-                    <td>S1 Informatika</td>
+                    <td>2026 - Present</td>
+                    <td>Universitas Siber Asia</td>
                 </tr>
             </table>
+            
+            <h2>GPA</h2>
+            <p>[N/A]</p>
 
-            <h2>Tingkat Keahlian</h2>
+            <h2>Relevant Courses</h2>
+
+            <table>
+                <tr>
+                    <th>Relevant Courses</th>
+                    <th>Level</th>
+                </tr>
+
+                <tr>
+                    <td>Algorithms and Data Structure</td>
+                    <td>Advanced</td>
+                </tr>
+
+                <tr>
+                    <td>Database Systems</td>
+                    <td>Intermediate</td>
+                </tr>
+
+                <tr>
+                    <td>Web Programming</td>
+                    <td>Advanced</td>
+                </tr>
+
+                <tr>
+                    <td>Calculus</td>
+                    <td>Intermediate</td>
+                </tr>
+
+                <tr>
+                    <td>Statistics</td>
+                    <td>Intermediate</td>
+                </tr>
+
+            </table>
+
+            <h2>Technical Skills</h2>
+
+            <table>
+                <tr>
+                    <th>Technical Skills</th>
+                    <th>Meaning</th>
+                </tr>
+
+                <tr>
+                    <td>Programming & Development</td>
+                    <td>HTML, CSS, JavaScript Basic Database Design Authentication and Login System Development.</td>
+                </tr>
+
+                <tr>
+                    <td>Game Development</td>
+                    <td>Unreal Engine Basic Game Development</td>
+                </tr>
+
+                <tr>
+                    <td>3D Design</td>
+                    <td>Blender (3D Modeling & Animation)</td>
+                </tr>
+
+                <tr>
+                    <td>Computer Science</td>
+                    <td>Algorithms and Data Structures.</td>
+                </tr>
+
+            </table>
+
+            <h2>Soft Skills</h2>
+
+            <p>Problem Solving, Critical Thinking, Fast Learner, Adaptability, Creativity and Time Management</p>
+
+            <h2>Projects / Experience</h2>
+
+            <p>1. AI Bootcamp Participant UNSIA Festival 2026</p>
+             <ul>
+                <li>Participated in an AI Bootcamp.</li>
+                <li>Learned the fundamentals of Artificial Intelligence.</li>
+                <li>Completed practical AI-related activities and assignments.</li>
+            </ul>
+            <p>2. Implemented user authentication using Firebase in Unreal Engine projects.</p>
+
+            <h2>Achievements / Certifications</h2>
+            <ul>
+                <li>AI Bootcamp Certificate – UNSIA Festival 2026, 2026</li>
+                <li>Winner, IT Bootcamp Category – UNSIA Festival 2026, 2026</li>
+
+            </ul>
+
+
+            <h2>Experience</h2>
+
+            <ul>
+                <li>Developed websites using HTML and CSS.</li>
+                <li>Designed and developed interactive games using Unreal Engine and Godot.</li>
+                <li>Produced 3D animations using Blender.</li>
+            </ul>
+
+            <h2>Language</h2>
+
+            <table>
+                <tr>
+                    <th>Language</th>
+                    <th>Level</th>
+                </tr>
+
+                <tr>
+                    <td>English</td>
+                    <td>Intermediate, During the practice run</td>
+                </tr>
+
+                <tr>
+                    <td>Indonesia Original</td>
+                    <td>Expert / Proficient</td>
+                </tr>
+
+            </table>
+
+            <h2>Hobbies</h2>
+
+            <ol>
+                <li>Animation</li>
+                <li>Programming</li>
+            </ol>
+
+            <h2 id="pt">Portfolio – SMT Program 2025</h2>
+            <div class="hhk"><b style="color: #1e3a8a;">Freiya Nantan Keona Sarif</b></div>
+            <p>Universitas Siber Asia</p>
+            <p>Program Studi Informatika</p>
+            
+
+            <h2>About Me</h2>
+
+            <p>
+                I am an Informatics <b>student</b> with a keen interest in technology, web development, animation, and graphic design. I enjoy learning new things that enhance my skills in both the digital realm and the scientific world.
+            </p>
+
+            <p>
+                Additionally, I am interested in <i>game creation and application development</i>. I have experience building simple websites, creating animations using Blender, and working on various HTML and CSS-based projects for game and science promotion.
+            </p>
+
+            <h2>Skill Level</h2>
 
             <table>
 
                 <tr>
-                    <th>Keahlian</th>
+                    <th>Skill</th>
                     <th>Level</th>
                 </tr>
 
                 <tr>
                     <td>HTML</td>
-                    <td>Menengah</td>
+                    <td>Advanced</td>
                 </tr>
 
                 <tr>
                     <td>Python</td>
-                    <td>Menengah</td>
+                    <td>Intermediate</td>
                 </tr>
 
                 <tr>
                     <td>Blender</td>
-                    <td>Menengah</td>
+                    <td>Advanced</td>
+                </tr>
+
+                <tr>
+                    <td>Unreal Engineer</td>
+                    <td>Advanced</td>
+                </tr>
+
+                <tr>
+                    <td>Excell</td>
+                    <td>Beginner / Basic</td>
+                </tr>
+
+                <tr>
+                    <td>chemistry</td>
+                    <td>Intermediate</td>
                 </tr>
                 
             </table>
 
-            <h2>Pengalaman</h2>
-
-            <ul>
-                <li>Membuat website edukasi penanaman.</li>
-                <li>Membuat game sederhana berbasis HTML dan JavaScript.</li>
-                <li>Membuat animasi menggunakan Blender.</li>
-            </ul>
-
-            <h2>Hobi</h2>
-
-            <ol>
-                <li>Animasi</li>
-                <li>Pemrograman</li>
-            </ol>
-
-            <h2>Galeri</h2>
+            
+            
+            <h2>Gallery</h2>
 
             <div class="gallery" >
-                <img src="gambar_cv_1.png" alt="Gambar 1" style="border: 1px solid #000000; ">
-                <img src="gambar_cv_2.png" alt="Gambar 2" style="border: 1px solid #000000; ">
-                <img src="gambar_cv_3.png" alt="Gambar 3" style="border: 1px solid #000000; ">
+                <img src="gambar_cv_1.png" alt="Gallery 1" style="border: 1px solid #000000; ">
+                <img src="gambar_cv_3.png" alt="Gallery 2" style="border: 1px solid #000000; ">
+                <img src="gambar_cv_2.png" alt="Gallery 3" style="border: 1px solid #000000; ">
             </div>
+
+            <h2 id="video">Project Showcase Video</h2>
+            <p>This video is about us at Asia Cyber ​University.</p>
+
+            <h2>3D Animation Project: [Animasi Akhir Semester 1 Universitas Siber Asia]</h2>
+        
+            <ul>
+                <li>Description : Created a 3D animation and documented the complete production workflow, including modeling, texturing, rigging, animation, lighting, and rendering.</li>
+                <li>Tools/Technologies : Blender</li>
+                <li>Role/Contribution : Designed and created the 3D models and contributed to the animation production process.</li>
+            </ul>
+
+            <iframe style="border-radius:10px;
+            border: 1px solid #000000; margin-top:10px; margin-bottom:20px;" width="560" height="315" src="https://www.youtube.com/embed/KZrmnfEqZXY?si=90uQ673psLesQ1kA" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+            gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <h2>3D Animation Project: [ALGORITMA STUKTUR DATA AND PHYTON]</h2>
+
+            <div class="video" >
+                <video controls="true" src="video1.mp4" type="video/webm" poster="GAMBAR.png "border: 1px solid #000000;>
+            </div>
+
+            <h2>Certifications / Courses</h2>
+
+            <ul>
+                <li>Third Place (Team) – Artificial Intelligence Category</li>
+                <li>IT Bootcamp “Tech-Rookie Bootcamp & Challenge – The Future Innovators”</li>
+                <li>UNSIA Festival 2026, Universitas Siber Asia</li>
+                </ul>
+
+            <div class="gallery" >
+                <img src="sertifikat.png" alt="Gallery 1" style="border: 1px solid #000000; width: 50%; height: 50%;"></div>
+                
+
+            <h2>Achievements</h2>
+
+            <div class="gallery" >
+                <img src="surat1.jpg" alt="Gallery 1" style="border: 1px solid #000000; width: 50%; height: 50%;">
+            </div>
+
+            <ul>
+                <li>Third Place (Team) – Artificial Intelligence Category</li>
+                <li>IT Bootcamp “Tech-Rookie Bootcamp & Challenge – The Future Innovators”</li>
+                <li>UNSIA Festival 2026, Universitas Siber Asia</li>
+            </ul>
+
 
         </div>
 
